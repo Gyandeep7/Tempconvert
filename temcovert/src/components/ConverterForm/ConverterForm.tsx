@@ -51,11 +51,7 @@ const ConverterForm: React.FC = () => {
     setOutputValue(result);
   };
 
-  useEffect(() => {
-    // Update output value whenever input value, from unit, to unit, or conversion type changes
-    handleConvert();
-  }, [inputValue, fromUnit, toUnit, conversionType, celsiusToFahrenheit, fahrenheitToCelsius, sqYardToSqFt, sqFtToSqYard, cmToM, mToCm]);
-
+  
   return (
     <Grid container spacing={2} className={classes.container}>
         <Grid item xs={12}>
